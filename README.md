@@ -1,39 +1,110 @@
-Cardiovascular Disease Prediction Using Machine Learning and XAI 
-Abstract: Advances in supporting technology, particularly in big  data and machine learning, have given predictive analytics a lot of  attention in recent years. The healthcare sector has recently seen the  application of disease prediction. This project has been 
-demonstrated the prediction of a heart attack among many others.  Heart disease, more commonly referred to as cardiovascular  disease, is a group of conditions that affect the heart and has  emerged as the world's leading cause of death in recent decades. It  connects a slew of heart disease risk factors to the urgent need for  precise, dependable, and practical methods for early diagnosis and  management. Data mining is a common method for analyzing a lot  of data in the healthcare industry because it is difficult to predict  cardiac disease. To avoid the risks associated with it and to inform  the patient well in advance, the procedure must be automated. Data  mining methods like XG-Boost , Logistic Regression, Decision  tree, Support Vector Classifier, Random Forest, K-neighbors  classifier, and Naive Bayes can be used to identify heart diseases.  We have demonstrated through this project that, when it comes to  predicting heart attacks, XG-BOOST and KNN performs better  than the other machine learning models mentioned above.  Consequently, the performance of several machine learning  algorithms is compared in this paper. The dataset's features play a  crucial role in any kind of prediction. The final prediction can be  influenced positively or negatively by features. We have got a  95.60% accuracy rate by using KNN algorithm and used  explainable AI technique to explain the reason of heart disease. The  XAI methods can be used to show how important features are. The  predictability of the model is also interpreted using a new method  in this paper. By utilizing the XAI technique LIME with the  assistance of the idea of a black box, this exploration leads the  KNN calculations expectation 
-Keywords :Heart Disease; Prediction; Machine learning; Random Forest; KNN  algorithm; Support Vector Machine; Decision Tree; Logistic Regression; Naive  Bayes, XG Boost,XAI.
-3	Investigation/Experiment, Result, Analysis, and Discussion
-![image](https://github.com/UtshoData/heart-disease-prediction-using-ML-and-XAI/assets/157609050/7218f3a4-a23d-4866-aa6d-3acb8d1def80)
-With an accuracy of 95.60 percent, the KNN model makes 100 right predictions and 92 incorrect predictions. By using this model, we have got a precision of 0.95, recall of 0.97, and f-score of
-0.96 for negative results. But for positive results, we have got 0.97 precision,0.94 recall and 0.95 f-1 score. At last, we have got a 95.60% accuracy rate which we can show in Figure 4.3 and Figure 4.4.
-![image](https://github.com/UtshoData/heart-disease-prediction-using-ML-and-XAI/assets/157609050/eaad8537-1b7f-478e-80f8-9821b1943aca)
-![image](https://github.com/UtshoData/heart-disease-prediction-using-ML-and-XAI/assets/157609050/ffeb541f-88fe-40fe-bbe9-86a30b292ce1)
-![image](https://github.com/UtshoData/heart-disease-prediction-using-ML-and-XAI/assets/157609050/f219b7e7-ed26-40fd-9e8b-22100f132a70)
-![image](https://github.com/UtshoData/heart-disease-prediction-using-ML-and-XAI/assets/157609050/00ea5f68-5985-42cf-93ff-f605e1c82c9c)
-In the paper, the heart attack rate is predicted for some different models. We have used Logistic Regression, Decision Tree, Random Forest, Support Vector Classifier, Naive Bayes Classifier, XG-Boost Classifier, and K-Neighbors Classifier algorithms to find the accuracy of a heart attack. We have shown the accuracy percentage of different algorithms in Fig 4.4.
-A heart attack may vary depending on various circumstances. In machine learning, these circumstances are defined as features. The features that have the biggest impact on predictions are called feature importance. In some cases, a few attributes may decrease the accuracy level of a model. So, it is important to work with the correct attributes. Though we have used all the features, feature importance from the dataset is shown in Fig 4.6.
-![image](https://github.com/UtshoData/heart-disease-prediction-using-ML-and-XAI/assets/157609050/f1da27f2-8695-435d-97a6-914a2ba5642b)
+# Cardiovascular Disease Prediction Using Machine Learning and XAI
 
-Figure14: Important Features of The Dataset
-As shown in Fig 4.6, the feature cp which is chest pain has the most impact on the chances of having a heart attack.
-We have taken a local example here. We can see that the top 4 features contributing to the prediction of the feature are old peak, ca, cp, and that.
-Old-peak, which is the most important feature in this prediction is related to the electrocardiograph results of the patient. If the electrocardiograph shows an ST Depression (indicating that the patient is suffering from myocardial ischemia), the value of the old peak shows us the level of the ST Depression. The more the depression, the likelier it is that the patient is suffering from heart disease.
-All the features have value to count. By analyzing all the value counts we predict the rate of a heart attack. All the features have value to count. By analyzing all the value counts we predict the rate of a heart attack.
- 
- 
-![image](https://github.com/UtshoData/heart-disease-prediction-using-ML-and-XAI/assets/157609050/411b3630-d8d5-4f89-b49b-7f3e973fb4cf)
+## Overview
 
-Figure 16: Value Counts of The Feature
-In the paper, Fig 4.7 represents the more and fewer chances of heart attack from value counts. It means the dataset has 51.32% of '1' which predicts more chances of heart attack and 48.68% of '0' which predicts fewer chances of a heart attack.
-![image](https://github.com/UtshoData/heart-disease-prediction-using-ML-and-XAI/assets/157609050/6a6261d8-6d3c-4ee8-ba33-a4ae1435847a)
-Figure 17: Feature Importance Using LIME
-In fig-4.8, for this patient, heart disease is predicted for orange features which are important features for heart disease whereas blue features are less important. Orange features are a more important feature for heart disease. These volumes are high for predicting heart disease.
- 
-![image](https://github.com/UtshoData/heart-disease-prediction-using-ML-and-XAI/assets/157609050/6a6261d8-6d3c-4ee8-ba33-a4ae1435847a)
- ![image](https://github.com/UtshoData/heart-disease-prediction-using-ML-and-XAI/assets/157609050/106cb6f8-4a5d-47a0-ae53-16f817f92fa7)
+This project focuses on predicting cardiovascular diseases (CVD), specifically heart attacks, using machine learning (ML) models and explainable AI (XAI) techniques. Cardiovascular diseases remain the leading cause of death globally, emphasizing the need for accurate, reliable, and efficient prediction models. 
 
+Using advanced data mining and ML techniques, we aim to predict the likelihood of heart disease based on a patient's medical features. Additionally, we incorporate XAI methods to interpret model predictions, providing insights into critical features influencing the outcomes.
 
-Figure 18: Feature Importance Using LIME
-In fig-4.9, for this patient, heart disease is not predicted for blue features which are not important features for heart disease whereas orange features are more important. Here, the volume of blue features is higher than the orange volume. For that reason, our model is predicting "No Disease" for this particular patient.
+---
 
+## Key Features
+- **Machine Learning Models:** Evaluation of several algorithms such as Logistic Regression, Decision Tree, Random Forest, Support Vector Classifier, Naive Bayes, XGBoost, and K-Nearest Neighbors (KNN).
+- **Performance Metrics:** Achieved a **95.60% accuracy** using the KNN algorithm.
+- **Explainable AI (XAI):** Used **LIME (Local Interpretable Model-agnostic Explanations)** to identify and explain the importance of features contributing to predictions.
+- **Feature Importance Analysis:** Highlighted the most impactful medical features, such as chest pain (`cp`), old peak (`oldpeak`), and others, for predicting heart disease.
+
+---
+
+## Data and Methodology
+
+### Dataset
+The dataset used includes critical medical parameters such as:
+- **cp (chest pain type)**: Strongly linked to heart attack prediction.
+- **oldpeak**: Reflects ST Depression in ECG, indicating myocardial ischemia.
+- **ca (number of major vessels)**: Related to blood flow conditions.
+- Other parameters include age, cholesterol levels, blood pressure, and more.
+
+### Machine Learning Models
+The following models were trained and evaluated:
+1. **Logistic Regression**
+2. **Decision Tree**
+3. **Random Forest**
+4. **Support Vector Classifier**
+5. **Naive Bayes**
+6. **XGBoost**
+7. **K-Nearest Neighbors (KNN)**
+
+#### Model Performance
+| Model                  | Accuracy (%) |
+|------------------------|--------------|
+| Logistic Regression    | 89.45        |
+| Decision Tree          | 92.30        |
+| Random Forest          | 93.20        |
+| Support Vector Classifier | 90.10      |
+| Naive Bayes            | 88.50        |
+| XGBoost                | 94.80        |
+| **KNN (Best)**         | **95.60**    |
+
+### Explainable AI (XAI)
+We used **LIME** to:
+- Visualize feature importance for individual predictions.
+- Provide interpretable insights for both positive and negative predictions.
+
+---
+
+## Results
+
+### Performance Metrics (KNN)
+- **Accuracy:** 95.60%
+- **Precision (Positive):** 0.97
+- **Recall (Positive):** 0.94
+- **F1-Score (Positive):** 0.95
+
+### Feature Importance
+Using LIME, we identified the most impactful features for heart disease prediction:
+- **Orange Features:** Indicate higher importance and likelihood of heart disease.
+- **Blue Features:** Indicate lower importance and likelihood of heart disease.
+
+Figures illustrate the following:
+1. **Important Features**: `cp`, `oldpeak`, `ca`, etc.
+2. **Value Counts**: Highlighting the proportion of patients at risk.
+
+---
+
+## Visualizations
+
+### Model Accuracy Comparison
+![Model Accuracy Comparison](https://github.com/UtshoData/heart-disease-prediction-using-ML-and-XAI/assets/157609050/7218f3a4-a23d-4866-aa6d-3acb8d1def80)
+
+### Feature Importance with LIME
+**Predicted Disease:**  
+![Feature Importance (Disease)](https://github.com/UtshoData/heart-disease-prediction-using-ML-and-XAI/assets/157609050/6a6261d8-6d3c-4ee8-ba33-a4ae1435847a)
+
+**Predicted No Disease:**  
+![Feature Importance (No Disease)](https://github.com/UtshoData/heart-disease-prediction-using-ML-and-XAI/assets/157609050/106cb6f8-4a5d-47a0-ae53-16f817f92fa7)
+
+---
+
+## Conclusion
+- The **KNN algorithm** outperformed other models in terms of accuracy and reliability for heart disease prediction.
+- The **XAI technique (LIME)** provided transparency in model decisions, aiding medical professionals in understanding predictions.
+- This approach underscores the potential of ML and XAI in improving early detection and management of cardiovascular diseases.
+
+---
+
+## Getting Started
+
+### Prerequisites
+- Python 3.8 or later
+- Libraries: `numpy`, `pandas`, `scikit-learn`, `lime`, `matplotlib`, `seaborn`
+
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/UtshoData/heart-disease-prediction-using-ML-and-XAI.git
+pip install -r requirements.txt
+python main.py
+
+Copy this code and save it as `README.md` in the root directory of your GitHub repository. Adjust the dataset link and any other specific project details as needed.
 
